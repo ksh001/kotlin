@@ -1,0 +1,25 @@
+fun main(){
+    var a = 20
+    var b = 7
+    println(a%b)
+    
+    
+    val name = "anfafdkl"
+    println(name.toUpperCase())
+    
+    val email = "andkf@djfdk.com"
+    val result = email.split("@")
+    println(result)
+    println(result[0])
+    println(result[1])
+    
+    val result2 = result[1].split(".")
+    
+    println(result2[0])
+    println(result2[1])
+    
+    val num = "sdkfjdk@dkf.com"
+    
+   println(num.split("@")[1].split(".")[0])
+    
+}
