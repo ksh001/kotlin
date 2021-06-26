@@ -1,0 +1,14 @@
+//list와 map의 합성
+fun main(){
+    var students = mutableListOf(
+        mapOf("name" to "Bob", "age" to 17),
+        mapOf("name" to "Tom", "age" to 18)
+    )
+    
+    println(students)
+    println(students[0])
+    println(students[0]["age"])
+    
+    students.add(mapOf("name" to "Jonh", "age" to 16))
+    println(students)
+}
