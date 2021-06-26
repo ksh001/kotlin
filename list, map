@@ -1,0 +1,37 @@
+//자료구조
+// list, map(key, value)
+fun main(){
+    //list
+    var example = listOf(1,2,'a')
+    println(example[0])
+    println(example[1])
+    println(example[2])
+    println(example.size)
+
+    //map
+    var ex2 = mapOf(5 to 'a', 6 to 'b')
+    println(ex2) //{5=a, 6=b}
+    println(ex2[5]) //a
+    println(ex2.size) //2
+    println(ex2.values) //[a,b]
+
+    //mutablelist : 수정 가능한 list
+    var list1 = mutableListOf('a', 'b', 'c', 'd', 'c')
+    list1.add('e')
+    list1[0]='A'
+    list1.set(1, 'B')
+    list1.remove('c')//맨 앞에 나오는 해당 값 삭제
+    list1.removeAt(2)
+
+    println(list1)
+
+    //mutablemap : 수정 가능한 map
+    var map1 = mutableMapOf('a' to 1, 'b' to 2, 'c' to 2)
+
+    map1['a'] = 0
+    map1.put('d',3)
+    map1.put('b',1)
+    map1.remove('c')
+    println(map1)
+
+}
