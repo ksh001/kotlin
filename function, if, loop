@@ -1,0 +1,38 @@
+//function, if, loop
+fun name(fN : String, lN : String):Boolean{
+    var a = fN + lN
+    
+    if(a == "AB" && fN == "a"){
+        return false
+    }
+    else if(a == "AB"){
+        return true
+    }
+    else if (a == "Ab"){
+        return false
+    }
+    else 
+    { return false }
+   
+}
+
+fun main(){
+    println(name("A", "B"))
+    
+   
+    var users = listOf(
+  mapOf("FirstName" to "르탄", "LastName" to "박"),
+  mapOf("FirstName" to "안드", "LastName" to "이"),
+  mapOf("FirstName" to "로이", "LastName" to "김"),
+  mapOf("FirstName" to "개발", "LastName" to "최"),
+  mapOf("FirstName" to "스파", "LastName" to "김"),
+)
+
+for (user in users) {
+  println(user)
+}
+
+ for(i in 0..10) //0..10 자리에 list 넣어도 됨
+    println(i)
+
+}
